@@ -40,9 +40,12 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            app.initialize(function(){
-                document.location.href="https://www.trocobuy.com/"
-            });
+            document.addEventListener('deviceready', function(){
+                location.href="https://www.trocobuy.com/";
+            }), false);
+            //app.initialize(function(){
+            //    location.href="https://www.trocobuy.com/";
+            //});
         </script>
     </body>
 </html>
